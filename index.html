@@ -38,9 +38,9 @@
 							conceitos envolvendo a Ciência de Dados.<br />
 							Sinta-se à vontade para entrar em contato através dos links no final da página. </p>
 					</div>
-					<span class="image object" style="display: flex; align-items: center; justify-content: center;">
+					<span class="image object" style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
 						<img src="images/perfil.jpeg" alt="Minha foto de perfil"
-							style="width: 400px; height: 400px; border-radius: 50%; object-fit: cover; border: 6px solid #f56a6a;" />
+							style="width: 100%; max-width: 400px; height: auto; aspect-ratio: 1/1; border-radius: 50%; object-fit: cover !important; border: 6px solid #f56a6a; box-sizing: border-box;" />
 					</span>
 				</section>
 
@@ -220,6 +220,7 @@
 	<style>
 		/* Modo Escuro - Injeção Rápida de Filtro CSS */
 		html.dark-mode {
+			-webkit-filter: invert(1) hue-rotate(180deg);
 			filter: invert(1) hue-rotate(180deg);
 			background-color: #c9cbd7 !important;
 		}
@@ -241,7 +242,9 @@
 		html.dark-mode img,
 		html.dark-mode video,
 		html.dark-mode iframe {
-			filter: invert(1) hue-rotate(180deg);
+			-webkit-filter: invert(1) hue-rotate(180deg) !important;
+			filter: invert(1) hue-rotate(180deg) !important;
+			transform: translateZ(0); /* Bugfix Safari iOS Mobile */
 		}
 	</style>
 	<script>
