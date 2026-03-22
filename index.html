@@ -218,33 +218,43 @@
 
 	<!-- Dark Mode Script e Estilos -->
 	<style>
-		/* Modo Escuro - Injeção Rápida de Filtro CSS */
-		html.dark-mode {
-			-webkit-filter: invert(1) hue-rotate(180deg);
-			filter: invert(1) hue-rotate(180deg);
-			background-color: #c9cbd7 !important;
+		/* Bloqueia o Dark Mode para telas de celular (abaixo de 800px), escondendo o botão */
+		@media screen and (max-width: 799px) {
+			#theme-toggle {
+				display: none !important;
+			}
 		}
 
-		html.dark-mode body,
-		html.dark-mode #wrapper,
-		html.dark-mode #main {
-			background-color: #c9cbd7 !important;
-			/* Mapeia aproximadamente para #282a36 (Dracula Background) após o filtro */
-		}
+		/* Aplica as regras do Modo Escuro exclusivamente em telas maiores que 800px (Desktop/Tablets Grandes) */
+		@media screen and (min-width: 800px) {
+			/* Modo Escuro - Injeção Rápida de Filtro CSS */
+			html.dark-mode {
+				-webkit-filter: invert(1) hue-rotate(180deg);
+				filter: invert(1) hue-rotate(180deg);
+				background-color: #c9cbd7 !important;
+			}
 
-		html.dark-mode #sidebar,
-		html.dark-mode #sidebar>.inner {
-			background-color: #a5a8bb !important;
-			/* Mapeia aproximadamente para #44475a (Dracula) após o filtro */
-		}
+			html.dark-mode body,
+			html.dark-mode #wrapper,
+			html.dark-mode #main {
+				background-color: #c9cbd7 !important;
+				/* Mapeia aproximadamente para #282a36 (Dracula Background) após o filtro */
+			}
 
-		/* Precisamos re-inverter os elementos de imagem e video pra eles não ficarem negativos */
-		html.dark-mode img,
-		html.dark-mode video,
-		html.dark-mode iframe {
-			-webkit-filter: invert(1) hue-rotate(180deg) !important;
-			filter: invert(1) hue-rotate(180deg) !important;
-			transform: translateZ(0); /* Bugfix Safari iOS Mobile */
+			html.dark-mode #sidebar,
+			html.dark-mode #sidebar>.inner {
+				background-color: #a5a8bb !important;
+				/* Mapeia aproximadamente para #44475a (Dracula) após o filtro */
+			}
+
+			/* Precisamos re-inverter os elementos de imagem e video pra eles não ficarem negativos */
+			html.dark-mode img,
+			html.dark-mode video,
+			html.dark-mode iframe {
+				-webkit-filter: invert(1) hue-rotate(180deg) !important;
+				filter: invert(1) hue-rotate(180deg) !important;
+				transform: translateZ(0); /* Bugfix Safari iOS Mobile */
+			}
 		}
 	</style>
 	<script>
