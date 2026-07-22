@@ -293,6 +293,29 @@
 				/* Mapeia aproximadamente para #44475a (Dracula) após o filtro */
 			}
 
+			/* Melhora o contraste de leitura para baixa visão (textos e títulos mais claros) */
+			html.dark-mode p,
+			html.dark-mode li,
+			html.dark-mode span:not(.label),
+			html.dark-mode dt,
+			html.dark-mode dd,
+			html.dark-mode td,
+			html.dark-mode th {
+				color: #111111 !important;
+				/* Invertido pelo filtro invert(1), transforma-se em off-white claro (#eeeeee) */
+			}
+
+			html.dark-mode h1,
+			html.dark-mode h2,
+			html.dark-mode h3,
+			html.dark-mode h4,
+			html.dark-mode h5,
+			html.dark-mode h6,
+			html.dark-mode strong {
+				color: #000000 !important;
+				/* Invertido pelo filtro invert(1), transforma-se em branco puro (#ffffff) */
+			}
+
 			/* Precisamos re-inverter os elementos de imagem e video pra eles não ficarem negativos */
 			html.dark-mode img,
 			html.dark-mode video,
