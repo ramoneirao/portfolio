@@ -385,11 +385,6 @@
 	<style>
 		html {
 			scroll-behavior: smooth;
-			scroll-padding-top: 90px;
-		}
-
-		section[id] {
-			scroll-margin-top: 90px;
 		}
 
 		/* Barra de Navegação Superior Fixa (Sticky Header) */
@@ -702,23 +697,45 @@
 				});
 			});
 
-			// Script de ScrollSpy (Destacar seção ativa no menu ao rolar)
+			// Script de ScrollSpy e Rolagem Suave Personalizada
 			const header = document.getElementById('header');
 			const navLinks = document.querySelectorAll('#top-nav ul li a');
 			const sections = Array.from(document.querySelectorAll('section[id]'));
 
-			function updateScrollSpy() {
+			// Rolagem precisa ao clicar no menu do header
+			navLinks.forEach(link => {
+				link.addEventListener('click', function (e) {
+					const href = this.getAttribute('href');
+					if (href && href.startsWith('#')) {
+						e.preventDefault();
+						const targetId = href.substring(1);
+						const targetSection = document.getElementById(targetId);
+						if (targetSection) {
+							const headerHeight = header ? header.offsetHeight : 65;
+							const targetY = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 15;
+							window.scrollTo({
+								top: targetY,
+								behavior: 'smooth'
+							});
+						}
+					}
+				});
+			});
 
+			function updateScrollSpy() {
+				const headerHeight = header ? header.offsetHeight : 65;
+				const scrollPosition = window.scrollY + headerHeight + 35;
 				let currentSectionId = 'banner';
+
 				sections.forEach(section => {
-					const sectionTop = section.offsetTop - 120;
-					if (window.scrollY >= sectionTop) {
+					const sectionTop = section.offsetTop;
+					if (scrollPosition >= sectionTop) {
 						currentSectionId = section.getAttribute('id');
 					}
 				});
 
-				// Trata o final da página (Contato)
-				if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+				// Se estiver no finalzinho da página, força destacar o menu Contatos
+				if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 60) {
 					currentSectionId = 'contato';
 				}
 
