@@ -20,10 +20,21 @@
 				<!-- Header -->
 				<header id="header">
 					<a href="index.html" class="logo"><strong>Portfólio de Projetos</strong> de Ciência de Dados</a>
-					<ul class="icons">
-						<li><a href="#" id="theme-toggle" class="icon solid fa-moon" title="Alternar Modo Escuro"><span
-									class="label">Modo Escuro</span></a></li>
-					</ul>
+					<div class="header-right">
+						<nav id="top-nav">
+							<ul>
+								<li><a href="#banner">Home</a></li>
+								<li><a href="#skills">Habilidades</a></li>
+								<li><a href="#experiencia">Experiência</a></li>
+								<li><a href="#projetos">Projetos</a></li>
+								<li><a href="#contato">Contatos</a></li>
+							</ul>
+						</nav>
+						<ul class="icons">
+							<li><a href="#" id="theme-toggle" class="icon solid fa-moon"
+									title="Alternar Modo Escuro"><span class="label">Modo Escuro</span></a></li>
+						</ul>
+					</div>
 				</header>
 
 				<!-- Banner -->
@@ -63,7 +74,7 @@
 				</section>
 
 				<!-- Section -->
-				<section>
+				<section id="skills">
 					<header class="major">
 						<h2>Habilidades</h2>
 					</header>
@@ -123,7 +134,7 @@
 
 
 				<!-- Experiências Profissionais -->
-				<section>
+				<section id="experiencia">
 					<header class="major">
 						<h2>Experiências Profissionais</h2>
 					</header>
@@ -175,12 +186,32 @@
 				</section>
 
 				<!-- Section -->
-				<section>
+				<section id="projetos">
 					<header class="major">
 						<h2>Projetos em Ciência de Dados</h2>
 					</header>
+
+					<!-- Filtro por Tópicos -->
+					<div class="topic-filter-container">
+						<div class="topic-chips" id="topic-chips">
+							<button class="topic-chip active" data-topic="all">Todos</button>
+							<button class="topic-chip" data-topic="Machine Learning">Machine Learning</button>
+							<button class="topic-chip" data-topic="NLP">NLP</button>
+							<button class="topic-chip" data-topic="IA Generativa">IA Generativa</button>
+							<button class="topic-chip" data-topic="MLOps">MLOps</button>
+							<button class="topic-chip" data-topic="Deep Learning">Deep Learning</button>
+							<button class="topic-chip" data-topic="LLM">LLM</button>
+							<button class="topic-chip" data-topic="FastAPI">FastAPI</button>
+							<button class="topic-chip" data-topic="Python">Python</button>
+						</div>
+					</div>
+
+					<div id="no-projects-message" style="display: none; padding: 2em; text-align: center; color: #777;">
+						<p>Nenhum projeto encontrado para o tópico selecionado.</p>
+					</div>
+
 					<div class="posts">
-						<article>
+						<article data-topics="Machine Learning, MLOps, LightGBM, Optuna, SHAP, MLflow, FastAPI, Python">
 							<a href="https://github.com/ramoneirao/churn-prediction" class="image" target="_blank"><img
 									src="images/churn.png" alt="Churn Prediction" /></a>
 							<h3>Predição de Churn de Clientes</h3>
@@ -190,12 +221,22 @@
 								otimização de hiperparâmetros com Optuna para o modelo LightGBM, explicabilidade com
 								SHAP, rastreamento de experimentos com MLflow e DagsHub, gerenciamento de dependências
 								com uv e servimento em tempo real via API RESTful com FastAPI.</p>
+							<div class="project-tags">
+								<span class="tag">Machine Learning</span>
+								<span class="tag">MLOps</span>
+								<span class="tag">LightGBM</span>
+								<span class="tag">Optuna</span>
+								<span class="tag">SHAP</span>
+								<span class="tag">MLflow</span>
+								<span class="tag">FastAPI</span>
+								<span class="tag">Python</span>
+							</div>
 							<ul class="actions">
 								<li><a href="https://github.com/ramoneirao/churn-prediction" class="button"
 										target="_blank">Saiba Mais</a></li>
 							</ul>
 						</article>
-						<article>
+						<article data-topics="IA Generativa, LLM, ReAct, Agente Autônomo, Python">
 							<a href="https://github.com/ramoneirao/ReAct-Travel-Agent" class="image"
 								target="_blank"><img src="images/reAct.png" alt="ReAct Travel Agent" /></a>
 							<h3>Assistente Autônomo de Viagens</h3>
@@ -203,12 +244,19 @@
 								padrão ReAct (Reason + Act). O sistema interpreta pedidos em linguagem natural, toma
 								decisões em tempo real e executa planos de viagem completos com streaming do processo de
 								pensamento e das ferramentas acionadas em tempo real.</p>
+							<div class="project-tags">
+								<span class="tag">IA Generativa</span>
+								<span class="tag">LLM</span>
+								<span class="tag">ReAct</span>
+								<span class="tag">Agente Autônomo</span>
+								<span class="tag">Python</span>
+							</div>
 							<ul class="actions">
 								<li><a href="https://github.com/ramoneirao/ReAct-Travel-Agent" class="button"
 										target="_blank">Saiba Mais</a></li>
 							</ul>
 						</article>
-						<article>
+						<article data-topics="Machine Learning, MLOps, XGBoost, Random Forest, MLflow, Python">
 							<a href="https://github.com/ramoneirao/fraud-detection" class="image" target="_blank"><img
 									src="images/fraudDetec.png" alt="Detecção de Fraudes em Cartão de Crédito" /></a>
 							<h3>Detecção de Fraudes em Cartão de Crédito</h3>
@@ -220,12 +268,20 @@
 								modelos (Logistic Regression, Random Forest e XGBoost) com ajuste de pesos de classe,
 								rastreamento de experimentos com MLflow e DagsHub, foco na otimização da métrica PR-AUC
 								e gerenciamento de dependências com uv.</p>
+							<div class="project-tags">
+								<span class="tag">Machine Learning</span>
+								<span class="tag">MLOps</span>
+								<span class="tag">XGBoost</span>
+								<span class="tag">Random Forest</span>
+								<span class="tag">MLflow</span>
+								<span class="tag">Python</span>
+							</div>
 							<ul class="actions">
 								<li><a href="https://github.com/ramoneirao/fraud-detection" class="button"
 										target="_blank">Saiba Mais</a></li>
 							</ul>
 						</article>
-						<article>
+						<article data-topics="IA Generativa, LLM, CrewAI, FastAPI, Python">
 							<a href="https://github.com/ramoneirao/guIA-viagens" class="image" target="_blank"><img
 									src="images/travelPlanner.png" alt="Planejador de Viagens" /></a>
 							<h3>Planejador de Viagens com IA (guIA-viagens)</h3>
@@ -234,13 +290,20 @@
 								geração automatizada dos roteiros; implementação de arquitetura multiagente com CrewAI.
 								Integração de modelos de linguagem via Groq e uso da API Tavily para busca de
 								informações na web.</p>
+							<div class="project-tags">
+								<span class="tag">IA Generativa</span>
+								<span class="tag">LLM</span>
+								<span class="tag">CrewAI</span>
+								<span class="tag">FastAPI</span>
+								<span class="tag">Python</span>
+							</div>
 							<ul class="actions">
 								<li><a href="https://github.com/ramoneirao/guIA-viagens" class="button"
 										target="_blank">Saiba Mais</a></li>
 							</ul>
 						</article>
 						<!-- 
-						<article>
+						<article data-topics="Machine Learning, MLOps, MLflow, DVC, Python">
 							<a href="https://github.com/ramoneirao/diabetes-mlops" class="image" target="_blank"><img
 									src="images/pic02.png" alt="MLOps Diabetes" /></a>
 							<h3>Pipeline MLOps para Predição de Diabetes</h3>
@@ -255,7 +318,7 @@
 										target="_blank">Saiba Mais</a></li>
 							</ul>
 						</article>
-						<article>
+						<article data-topics="NLP, BERT, LLM, Flask, Python">
 							<a href="https://emotion-mining.vercel.app/" class="image" target="_blank"><img
 									src="images/pic03.png" alt="Emotion Mining" /></a>
 							<h3>Plataforma de Mineração de Emoções</h3>
@@ -270,7 +333,7 @@
 							</ul>
 						</article>
 						-->
-						<article>
+						<article data-topics="Machine Learning, Deep Learning, NLP, BERT, Web Scraping, Python">
 							<a href="https://github.com/ramoneirao/EmoClassifier" class="image" target="_blank"><img
 									src="images/sentiment.png" alt="EmoClassifier" /></a>
 							<h3>Sentiment Analysis</h3>
@@ -280,6 +343,14 @@
 								pré-processamento de texto (limpeza, normalização e tokenização) e o treinamento de um
 								modelo de classificação baseado na arquitetura <strong>BERT</strong> utilizando Python e
 								bibliotecas de ciência de dados.</p>
+							<div class="project-tags">
+								<span class="tag">Machine Learning</span>
+								<span class="tag">Deep Learning</span>
+								<span class="tag">NLP</span>
+								<span class="tag">BERT</span>
+								<span class="tag">Web Scraping</span>
+								<span class="tag">Python</span>
+							</div>
 							<ul class="actions">
 								<li><a href="https://github.com/ramoneirao/EmoClassifier" class="button"
 										target="_blank">Saiba Mais</a></li>
@@ -290,9 +361,9 @@
 
 
 				<!-- Contato -->
-				<section>
+				<section id="contato">
 					<header class="major">
-						<h2>Contato</h2>
+						<h2>Contatos</h2>
 					</header>
 					<p>Sinta-se à vontade para entrar em contato</p>
 					<ul class="contact">
@@ -312,6 +383,185 @@
 
 	<!-- Dark Mode Script e Estilos -->
 	<style>
+		html {
+			scroll-behavior: smooth;
+			scroll-padding-top: 90px;
+		}
+
+		section[id] {
+			scroll-margin-top: 90px;
+		}
+
+		/* Barra de Navegação Superior Fixa (Sticky Header) */
+		#header {
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			background-color: #ffffff !important;
+			padding-top: 1.25em !important;
+			padding-bottom: 1em !important;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 1em;
+			box-shadow: none !important;
+		}
+
+		#header>* {
+			flex: initial !important;
+		}
+
+		.header-right {
+			display: flex;
+			align-items: center;
+			gap: 1.5em;
+			margin-left: auto;
+		}
+
+		#header .icons {
+			text-align: right;
+			margin: 0;
+			padding: 0;
+		}
+
+		#top-nav {
+			margin: 0;
+		}
+
+		#top-nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			gap: 1.25em;
+			align-items: center;
+		}
+
+		#top-nav ul li {
+			margin: 0;
+			padding: 0;
+		}
+
+		#top-nav ul li a {
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 0.9em;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			color: #3d4449;
+			transition: color 0.2s ease-in-out;
+			border-bottom: none;
+			position: relative;
+			padding-bottom: 4px;
+		}
+
+		#top-nav ul li a:hover,
+		#top-nav ul li a.active {
+			color: #f56a6a !important;
+		}
+
+		#top-nav ul li a.active::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: #f56a6a;
+			border-radius: 2px;
+		}
+
+		@media screen and (max-width: 800px) {
+			#header {
+				padding-top: 1.5em !important;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+
+			.header-right {
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 1em;
+			}
+
+			#top-nav ul {
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 0.8em;
+			}
+		}
+
+		/* Filtro de Tópicos */
+		.topic-filter-container {
+			margin-bottom: 2em;
+			padding: 0.5em 0;
+			background: transparent;
+		}
+
+		.topic-chips {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5em;
+		}
+
+		.topic-chip {
+			background: transparent !important;
+			background-color: transparent !important;
+			color: #7f888f !important;
+			border: 1.5px solid #d0d0d0 !important;
+			border-radius: 1.5em;
+			padding: 0.4em 1.1em;
+			font-size: 0.85em;
+			font-weight: 600;
+			cursor: pointer;
+			transition: all 0.2s ease;
+			box-shadow: none;
+			line-height: 1.2;
+			height: auto;
+		}
+
+		.topic-chip:hover {
+			background-color: #f56a6a !important;
+			color: #ffffff !important;
+			border-color: #f56a6a !important;
+		}
+
+		.topic-chip.active {
+			background-color: #f56a6a !important;
+			color: #ffffff !important;
+			border-color: #f56a6a !important;
+		}
+
+		/* Tags nos Cards dos Projetos */
+		.project-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.4em;
+			margin: 1em 0 1.2em 0;
+		}
+
+		.project-tags .tag {
+			background-color: rgba(245, 106, 106, 0.1);
+			color: #f56a6a;
+			border: 1px solid rgba(245, 106, 106, 0.3);
+			border-radius: 4px;
+			padding: 0.25em 0.6em;
+			font-size: 0.75em;
+			font-weight: 600;
+			cursor: pointer;
+			transition: background-color 0.2s, color 0.2s, transform 0.1s;
+		}
+
+		.project-tags .tag:hover {
+			background-color: #f56a6a;
+			color: #ffffff !important;
+			transform: translateY(-1px);
+		}
+
 		/* Bloqueia o Dark Mode para telas de celular (abaixo de 800px), escondendo o botão */
 		@media screen and (max-width: 799px) {
 			#theme-toggle {
@@ -331,7 +581,8 @@
 
 			html.dark-mode body,
 			html.dark-mode #wrapper,
-			html.dark-mode #main {
+			html.dark-mode #main,
+			html.dark-mode #header {
 				background-color: #c9cbd7 !important;
 				/* Mapeia aproximadamente para #282a36 (Dracula Background) após o filtro */
 			}
@@ -403,6 +654,85 @@
 				themeToggleBtn.classList.add('fa-sun');
 			}
 		}
+
+		// Script do Filtro de Projetos por Tópico
+		document.addEventListener('DOMContentLoaded', function () {
+			const topicChips = document.querySelectorAll('.topic-chip');
+			const projectArticles = document.querySelectorAll('.posts article');
+			const noProjectsMsg = document.getElementById('no-projects-message');
+			let currentTopic = 'all';
+
+			function filterProjects() {
+				let visibleCount = 0;
+
+				projectArticles.forEach(article => {
+					const topics = (article.getAttribute('data-topics') || '').toLowerCase();
+					const matchesTopic = (currentTopic === 'all') || topics.includes(currentTopic.toLowerCase());
+
+					if (matchesTopic) {
+						article.style.display = '';
+						visibleCount++;
+					} else {
+						article.style.display = 'none';
+					}
+				});
+
+				if (noProjectsMsg) {
+					noProjectsMsg.style.display = (visibleCount === 0) ? 'block' : 'none';
+				}
+			}
+
+			topicChips.forEach(chip => {
+				chip.addEventListener('click', function () {
+					topicChips.forEach(c => c.classList.remove('active'));
+					this.classList.add('active');
+					currentTopic = this.getAttribute('data-topic');
+					filterProjects();
+				});
+			});
+
+			document.querySelectorAll('.project-tags .tag').forEach(tag => {
+				tag.addEventListener('click', function () {
+					const tagText = this.textContent.trim();
+					topicChips.forEach(chip => {
+						if (chip.getAttribute('data-topic').toLowerCase() === tagText.toLowerCase()) {
+							chip.click();
+						}
+					});
+				});
+			});
+
+			// Script de ScrollSpy (Destacar seção ativa no menu ao rolar)
+			const header = document.getElementById('header');
+			const navLinks = document.querySelectorAll('#top-nav ul li a');
+			const sections = Array.from(document.querySelectorAll('section[id]'));
+
+			function updateScrollSpy() {
+
+				let currentSectionId = 'banner';
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop - 120;
+					if (window.scrollY >= sectionTop) {
+						currentSectionId = section.getAttribute('id');
+					}
+				});
+
+				// Trata o final da página (Contato)
+				if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+					currentSectionId = 'contato';
+				}
+
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href') === '#' + currentSectionId) {
+						link.classList.add('active');
+					}
+				});
+			}
+
+			window.addEventListener('scroll', updateScrollSpy);
+			updateScrollSpy();
+		});
 	</script>
 
 	<!-- Scripts -->
