@@ -1,395 +1,610 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="pt-BR">
 
 <head>
-	<title>Portfólio de Ciência de Dados</title>
+	<title>Ramon Mendes | Cientista de Dados</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="Portfólio de Ramon Mendes, Cientista de Dados com projetos em Machine Learning, NLP, MLOps, FastAPI, MLflow, XGBoost, LightGBM e BERT." />
+	<meta name="author" content="Ramon Mendes" />
+	<meta name="theme-color" content="#ffffff" />
+	<meta name="robots" content="index, follow" />
+
+	<link rel="canonical" href="https://ramoneirao.github.io/portfolio/" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:title" content="Ramon Mendes | Cientista de Dados" />
+	<meta property="og:description" content="Machine Learning, NLP e MLOps aplicados a problemas reais." />
+	<meta property="og:url" content="https://ramoneirao.github.io/portfolio/" />
+	<meta property="og:image" content="https://ramoneirao.github.io/portfolio/images/perfil.jpeg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Ramon Mendes | Cientista de Dados" />
+	<meta name="twitter:description" content="Machine Learning, NLP e MLOps aplicados a problemas reais." />
+	<meta name="twitter:image" content="https://ramoneirao.github.io/portfolio/images/perfil.jpeg" />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Ramon Mendes",
+		"url": "https://ramoneirao.github.io/portfolio/",
+		"image": "https://ramoneirao.github.io/portfolio/images/perfil.jpeg",
+		"jobTitle": "Cientista de Dados",
+		"sameAs": [
+			"https://github.com/ramoneirao",
+			"https://www.linkedin.com/in/ramoneirao"
+		]
+	}
+	</script>
+
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+	<a class="skip-link" href="#main">Ir para o conteúdo principal</a>
 
-		<!-- Main -->
+	<div id="wrapper">
 		<div id="main">
 			<div class="inner">
 
 				<!-- Header -->
-				<header id="header">
-					<a href="index.html" class="logo"><strong>Portfólio de Ciência de Dados</strong> </a>
+				<header id="header" class="portfolio-header">
+					<a href="#banner" class="logo">
+						<strong>Ramon Mendes</strong> | Ciência de Dados
+					</a>
+
 					<div class="header-right">
-						<nav id="top-nav">
+						<nav id="top-nav" aria-label="Navegação principal">
 							<ul>
-								<li><a href="#banner">Home</a></li>
-								<li><a href="#skills">Habilidades</a></li>
-								<li><a href="#experiencia">Experiência</a></li>
-								<li><a href="#certificacoes">Certificações</a></li>
+								<li><a href="#banner">Início</a></li>
 								<li><a href="#projetos">Projetos</a></li>
-								<li><a href="#contato">Contatos</a></li>
+								<li><a href="#experiencia">Experiência</a></li>
+								<li><a href="#publicacoes">Publicações</a></li>
+								<li><a href="#skills">Habilidades</a></li>
+								<li><a href="#contato">Contato</a></li>
 							</ul>
 						</nav>
+
 						<ul class="icons">
-							<li><a href="#" id="theme-toggle" class="icon solid fa-moon"
-									title="Alternar Modo Escuro"><span class="label">Modo Escuro</span></a></li>
+							<li>
+								<a href="#" id="theme-toggle" class="icon solid fa-moon"
+									title="Alternar modo escuro" aria-label="Alternar modo escuro">
+									<span class="label">Modo Escuro</span>
+								</a>
+							</li>
 						</ul>
+
+						<button class="mobile-menu-toggle icon solid fa-bars" id="mobile-menu-toggle"
+							type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="top-nav">
+							<span class="label">Menu</span>
+						</button>
 					</div>
 				</header>
 
-				<!-- Banner -->
-				<section id="banner">
+				<!-- Hero -->
+				<section id="banner" class="portfolio-hero">
 					<div class="content">
+						<p class="hero-kicker">Ciência de Dados · Machine Learning · NLP · MLOps</p>
+
 						<header>
-							<h1>Olá, seja bem-vindo ao meu Portfólio</h1>
+							<h1>Ramon Mendes</h1>
 						</header>
-						<p>Nesta página, eu demonstro minhas habilidades de resolver problemas de negócio utilizando
-							conceitos e ferramentas da Ciência de Dados.<br />
-							Você vai encontrar também minhas experiências profissionais, habilidades, ferramentas e
-							conceitos envolvendo a Ciência de Dados.<br />
-							Sinta-se à vontade para entrar em contato através dos links no final da página. </p>
+
+						<p class="hero-role">Cientista de Dados com foco em Machine Learning, NLP e MLOps.</p>
+
+						<p class="hero-copy">
+							Desenvolvo soluções de dados <strong>end-to-end</strong>, da exploração e modelagem ao
+							rastreamento de experimentos e disponibilização via API. Minha trajetória combina
+							experiência profissional com dados, pesquisa acadêmica em NLP e projetos aplicados com
+							Python, LightGBM, XGBoost, BERT, MLflow e FastAPI.
+						</p>
+
+						<ul class="actions hero-actions">
+							<li><a href="#projetos" class="button primary">Ver projetos</a></li>
+							<li><a href="https://github.com/ramoneirao" target="_blank" rel="noopener noreferrer"
+									class="button hero-social-link">GitHub</a></li>
+							<li><a href="https://www.linkedin.com/in/ramoneirao" target="_blank"
+									rel="noopener noreferrer" class="button hero-social-link">LinkedIn</a></li>
+						</ul>
+
+						<div class="quick-highlights" aria-label="Destaques profissionais">
+							<div class="quick-highlight">
+								<strong>2</strong>
+								<span>artigos publicados em NLP e análise de sentimentos</span>
+							</div>
+							<div class="quick-highlight">
+								<strong>5</strong>
+								<span>projetos públicos em Machine Learning, MLOps e IA</span>
+							</div>
+							<div class="quick-highlight">
+								<strong>End-to-end</strong>
+								<span>modelagem, experiment tracking, APIs e engenharia aplicada</span>
+							</div>
+						</div>
 					</div>
-					<span class="image object"
-						style="display: flex; align-items: center; justify-content: center; overflow: hidden;">
-						<img src="images/perfil.jpeg" alt="Minha foto de perfil"
-							style="width: 100%; max-width: 400px; height: auto; aspect-ratio: 1/1; border-radius: 50%; object-fit: cover !important; border: 6px solid #f56a6a; box-sizing: border-box;" />
+
+					<span class="image object">
+						<img class="profile-photo" src="images/perfil.jpeg" alt="Foto de Ramon Mendes"
+							width="500" height="500" fetchpriority="high" />
 					</span>
 				</section>
 
-
 				<!-- Sobre mim -->
-				<section>
+				<section id="sobre">
 					<header class="major">
 						<h2>Sobre mim</h2>
 					</header>
 
-					<h3 id="content">Meu nome é Ramon Mendes</h3>
-					<p>Sou formado em Ciência da Computação pela UFPA e Ciência de Dados pela EBAC.</p>
-					<p>Atualmente, trabalho como estagiário de engenharia de software na Secretaria Estadual de
-						Administração Penitenciária do Pará (SEAP), desenvolvendo soluções em software e trabalhando com
-						projetos pessoais sobre Ciência de Dados, para adquirir experiência na solução de problemas de
-						negócios e domínio de ferramentas e conceitos da análise de dados.</p>
-					<p>Estou em busca de uma oportunidade de trabalhar profissionalmente como Cientista de Dados para
-						melhorar a tomada de decisão da empresa, através da construção de soluções usando dados.</p>
-				</section>
+					<div class="about-intro">
+						<h3>Dados, software e pesquisa aplicados a problemas reais</h3>
 
-				<!-- Section -->
-				<section id="skills">
-					<header class="major">
-						<h2>Habilidades</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon solid fa-code"></span>
-							<div class="content">
-								<h3>Linguagens de Programação e Banco de Dados</h3>
-								<ul>
-									<li>Python com foco em análise de dados</li>
-									<li>Web Scraping com Python</li>
-									<li>SQL para extração e manipulação de dados</li>
-									<li>R para modelagem estatística</li>
-									<li>Banco de Dados SQLite, PostgreSQL, MySQL e MongoDB</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-brain"></span>
-							<div class="content">
-								<h3>Estatística e Machine Learning</h3>
-								<ul>
-									<li>Estatística Descritiva (localização, dispersão, assimetria, curtose, densidade)
-									</li>
-									<li>Algoritmos de Regressão, Classificação, Clusterização e "learn to rank"</li>
-									<li>Técnicas de balanceamento dos dados, seleção de atributos e redução de
-										Dimensionalidade</li>
-									<li>Métricas de performance dos Algoritmos (RMSE, MAE, MAPE, Matriz de Confusão,
-										Precisão, Recall, F1-Score, Curva ROC, Curva Lift AUC, Silhouette Score,
-										DB-Index)</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-chart-pie"></span>
-							<div class="content">
-								<h3>Visualização de Dados</h3>
-								<ul>
-									<li>Matplotlib, Seaborn, Plotly e Bokeh</li>
-									<li>Power BI, Tableau e Looker</li>
-								</ul>
-							</div>
-						</article>
-						<article>
-							<span class="icon solid fa-laptop-code"></span>
-							<div class="content">
-								<h3>Engenharia de Software</h3>
-								<ul>
-									<li>Git, GitHub, GitLab, Virtual Environments, Docker</li>
-									<li>Streamlit, FastAPI, Flask, APIs Python</li>
-									<li>Cloud AWS e Google Cloud Platform (GCP)</li>
-								</ul>
-							</div>
-						</article>
+						<p>
+							Sou formado em Ciência da Computação pela UFPA e tenho formação em Ciência de Dados pela
+							EBAC. Minha experiência reúne análise de dados, desenvolvimento de software e pesquisa
+							aplicada em Processamento de Linguagem Natural.
+						</p>
+
+						<p>
+							Atualmente atuo na Secretaria de Estado de Administração Penitenciária do Pará (SEAP/PA),
+							trabalhando com análise de bases operacionais, automação de relatórios e desenvolvimento de
+							sistemas. Paralelamente, desenvolvo projetos de Machine Learning, NLP e MLOps cobrindo
+							diferentes etapas do ciclo de uma solução de dados.
+						</p>
+
+						<p>
+							Busco oportunidades em Ciência de Dados e Machine Learning nas quais eu possa transformar
+							dados em modelos, análises e produtos que apoiem decisões de negócio.
+						</p>
 					</div>
 				</section>
 
-
-				<!-- Experiências Profissionais -->
-				<section id="experiencia">
-					<header class="major">
-						<h2>Experiências Profissionais</h2>
-					</header>
-
-					<h3 id="estagio-seap">Estagiário de Engenharia de Software/ Ciência de Dados – Secretaria de Estado
-						de Administração Penitenciária (SEAP/PA)</h3>
-					<p><strong>Abr 2025 - Atual</strong></p>
-					<ul>
-						<li>Realização de <strong>Análise Exploratória de Dados (EDA)</strong> em bases operacionais
-							utilizando <strong>Python e Pandas</strong>, identificando padrões críticos e gerando
-							insights estratégicos.</li>
-						<li>Desenvolvimento de relatórios analíticos automatizados para suporte à tomada de decisão e
-							otimização da eficiência operacional.</li>
-						<li>Manutenção de módulos de sistemas institucionais utilizando <strong>Laravel e PHP</strong>,
-							focando na melhoria de funcionalidades para equipes de campo.</li>
-					</ul>
-
-					<hr />
-
-					<h3 id="pibic-ufpa">Pesquisador de Iniciação Científica (PIBIC) – UFPA</h3>
-					<p><strong>Jan 2023 - Mar 2025</strong></p>
-					<ul>
-						<li>Pesquisa aplicada em <strong>Processamento de Linguagem Natural (NLP)</strong>, focada em
-							mineração de emoções e análise de sentimentos em textos em português.</li>
-						<li>Implementação e benchmark de modelos de <strong>Gradient Boosting (XGBoost, LightGBM,
-								CatBoost)</strong> e arquiteturas de <strong>Deep Learning (BERT)</strong>.</li>
-						<li><strong>Artigos Publicados:</strong>
-							<ul>
-								<li><a href="https://sol.sbc.org.br/index.php/stil/article/view/31160"
-										target="_blank"><em>Mineração de Emoções Multirrótulo Em Textos Curtos</em></a>
-									(STIL/SBC).</li>
-								<li><a href="https://www.tecsi.org/contecsi/index.php/contecsi/20CONTECSI/paper/view/7238"
-										target="_blank"><em>Análise de Sentimentos em Textos Curtos de Jogos
-											Empáticos</em></a> (CONTECSI).</li>
-							</ul>
-						</li>
-					</ul>
-
-					<hr />
-
-					<h3 id="suporte-next">Suporte de TI – Next Tecnologia</h3>
-					<p><strong>Fev 2022 - Dez 2022</strong></p>
-					<ul>
-						<li>Suporte técnico especializado em hardware e software, garantindo a alta disponibilidade da
-							infraestrutura tecnológica.</li>
-						<li>Otimização de processos internos e resolução ágil de incidentes críticos, melhorando o fluxo
-							operacional do setor.</li>
-					</ul>
-				</section>
-
-				<!-- Cursos e Certificações -->
-				<section id="certificacoes">
-					<header class="major">
-						<h2>Cursos e Certificações</h2>
-					</header>
-					<ul>
-						<li>AWS Cloud Quest for Cloud Practitioner, <a href="https://www.credly.com/badges/b503af1b-667d-45ac-8348-ee620053177d/linked_in_profile" target="_blank"><strong>Amazon Web Services (AWS)</strong></a>.</li>
-						<li>Linguagem Python - Do Básico a Aplicações de IA, <a href="https://mycourse.app/EK2ANWJwkXy115GGd" target="_blank"><strong>Data Science Academy</strong></a>.</li>
-						<li>Process Data from Dirty to Clean, <a href="https://www.coursera.org/account/accomplishments/verify/BNJAELD88LVU" target="_blank"><strong>Google</strong></a>.</li>
-						<li>Linguagem Python Para Data Science e Machine Learning, <a href="https://mycourse.app/aGdpvq8SaRHlAzJDR" target="_blank"><strong>Data Science Academy</strong></a>.</li>
-						<li>Processamento de Linguagem Natural com BERT e Python, <a href="https://www.udemy.com/certificate/UC-824a4fea-0dd0-436b-b2e4-a298f95bddcb/" target="_blank"><strong>IA Expert Academy</strong></a>.</li>
-						<li>Inteligência Artificial, <a href="https://lms.ebaconline.com.br/certs/validate/33593-40640-87481-91584" target="_blank"><strong>Escola Britânica de Artes Criativas e Tecnologia (EBAC)</strong></a>.</li>
-					</ul>
-				</section>
-
-				<!-- Section -->
+				<!-- Projetos -->
 				<section id="projetos">
 					<header class="major">
 						<h2>Projetos em Ciência de Dados</h2>
 					</header>
 
-					<!-- Filtro por Tópicos -->
+					<!--
+							<p class="project-section-intro">
+								Selecionei projetos que demonstram não apenas o uso de algoritmos, mas também estruturação de
+								pipelines, avaliação de modelos, explicabilidade, rastreamento de experimentos e integração
+								com aplicações.
+							</p>
+
+					-->
 					<div class="topic-filter-container">
-						<div class="topic-chips" id="topic-chips">
-							<button class="topic-chip active" data-topic="all">Todos</button>
-							<button class="topic-chip" data-topic="Machine Learning">Machine Learning</button>
-							<button class="topic-chip" data-topic="NLP">NLP</button>
-							<button class="topic-chip" data-topic="IA Generativa">IA Generativa</button>
-							<button class="topic-chip" data-topic="MLOps">MLOps</button>
-							<button class="topic-chip" data-topic="Deep Learning">Deep Learning</button>
-							<button class="topic-chip" data-topic="LLM">LLM</button>
-							<button class="topic-chip" data-topic="FastAPI">FastAPI</button>
-							<button class="topic-chip" data-topic="Python">Python</button>
+						<div class="topic-chips" id="topic-chips" aria-label="Filtrar projetos por tema">
+							<button class="topic-chip active" type="button" data-topic="all"
+								aria-pressed="true">Todos</button>
+							<button class="topic-chip" type="button" data-topic="Machine Learning"
+								aria-pressed="false">Machine Learning</button>
+							<button class="topic-chip" type="button" data-topic="NLP"
+								aria-pressed="false">NLP</button>
+							<button class="topic-chip" type="button" data-topic="IA Generativa"
+								aria-pressed="false">IA Generativa</button>
+							<button class="topic-chip" type="button" data-topic="MLOps"
+								aria-pressed="false">MLOps</button>
+							<button class="topic-chip" type="button" data-topic="LLM"
+								aria-pressed="false">LLM</button>
+							<button class="topic-chip" type="button" data-topic="Deep Learning"
+								aria-pressed="false">Deep Learning</button>
+							<button class="topic-chip" type="button" data-topic="FastAPI"
+								aria-pressed="false">FastAPI</button>
+							<button class="topic-chip" type="button" data-topic="Python"
+								aria-pressed="false">Python</button>
 						</div>
 					</div>
 
-					<div id="no-projects-message" style="display: none; padding: 2em; text-align: center; color: #777;">
+					<div id="no-projects-message" style="display:none; padding:2em 0;">
 						<p>Nenhum projeto encontrado para o tópico selecionado.</p>
 					</div>
 
 					<div class="posts">
-						<article data-topics="Machine Learning, MLOps, LightGBM, Optuna, SHAP, MLflow, FastAPI, Python">
-							<a href="https://github.com/ramoneirao/churn-prediction" class="image" target="_blank"><img
-									src="images/churn.png" alt="Churn Prediction" /></a>
-							<h3>Predição de Churn de Clientes</h3>
-							<p>O <strong>Bank Churn Prediction</strong> é um projeto de Machine Learning End-to-End
-								desenvolvido para prever o risco de cancelamento de clientes de cartão de crédito. O
-								projeto segue boas práticas de Ciência de Dados e MLOps: pipeline modularizado,
-								otimização de hiperparâmetros com Optuna para o modelo LightGBM, explicabilidade com
-								SHAP, rastreamento de experimentos com MLflow e DagsHub, gerenciamento de dependências
-								com uv e servimento em tempo real via API RESTful com FastAPI.</p>
+
+						<!-- Fraude -->
+						<article data-topics="Machine Learning, MLOps, XGBoost, Random Forest, MLflow, Python">
+							<a href="https://github.com/ramoneirao/fraud-detection" class="image" target="_blank"
+								rel="noopener noreferrer">
+								<img src="images/fraudDetec.png" alt="Projeto de detecção de fraudes em cartão de crédito"
+									loading="lazy" decoding="async" />
+							</a>
+
+							<p class="project-eyebrow">Machine Learning · MLOps</p>
+							<h3>Detecção de Fraudes em Cartão de Crédito</h3>
+
+							<p class="project-summary">
+								Classificação de transações fraudulentas em um cenário de desbalanceamento extremo,
+								com comparação entre Logistic Regression, Random Forest e XGBoost e foco em métricas
+								adequadas ao custo do problema.
+							</p>
+
+							<div class="project-result">
+								<strong>Melhor modelo:</strong> XGBoost com PR-AUC 0,879, F1 0,863 e Precision 0,891.
+							</div>
+
 							<div class="project-tags">
-								<span class="tag">Machine Learning</span>
-								<span class="tag">MLOps</span>
+								<span class="tag">XGBoost</span>
+								<span class="tag">MLflow</span>
+								<span class="tag">DagsHub</span>
+								<span class="tag">RobustScaler</span>
+								<span class="tag">Python</span>
+							</div>
+
+							<ul class="actions project-actions">
+								<li>
+									<a href="https://github.com/ramoneirao/fraud-detection" class="button"
+										target="_blank" rel="noopener noreferrer">Ver código</a>
+								</li>
+							</ul>
+						</article>
+
+						<!-- Churn -->
+						<article data-topics="Machine Learning, MLOps, LightGBM, Optuna, SHAP, MLflow, FastAPI, Python">
+							<a href="https://github.com/ramoneirao/churn-prediction" class="image" target="_blank"
+								rel="noopener noreferrer">
+								<img src="images/churn.png" alt="Projeto de predição de churn de clientes"
+									loading="lazy" decoding="async" />
+							</a>
+
+							<p class="project-eyebrow">Machine Learning · MLOps</p>
+							<h3>Predição de Churn de Clientes</h3>
+
+							<p class="project-summary">
+								Projeto end-to-end para estimar o risco de cancelamento de clientes, estruturado com
+								pipeline modular, otimização de hiperparâmetros, explicabilidade e disponibilização
+								do modelo via API REST.
+							</p>
+
+							<div class="project-result">
+								<strong>Diferencial:</strong> LightGBM + Optuna + SHAP + MLflow/DagsHub + FastAPI em
+								um fluxo reproduzível.
+							</div>
+
+							<div class="project-tags">
 								<span class="tag">LightGBM</span>
 								<span class="tag">Optuna</span>
 								<span class="tag">SHAP</span>
 								<span class="tag">MLflow</span>
 								<span class="tag">FastAPI</span>
-								<span class="tag">Python</span>
 							</div>
-							<ul class="actions">
-								<li><a href="https://github.com/ramoneirao/churn-prediction" class="button"
-										target="_blank">Saiba Mais</a></li>
+
+							<ul class="actions project-actions">
+								<li>
+									<a href="https://github.com/ramoneirao/churn-prediction" class="button"
+										target="_blank" rel="noopener noreferrer">Ver código</a>
+								</li>
 							</ul>
 						</article>
-						<article data-topics="IA Generativa, LLM, ReAct, Agente Autônomo, Python">
-							<a href="https://github.com/ramoneirao/ReAct-Travel-Agent" class="image"
-								target="_blank"><img src="images/reAct.png" alt="ReAct Travel Agent" /></a>
-							<h3>Assistente Autônomo de Viagens</h3>
-							<p>O <strong>ReAct-Travel-Agent</strong> é um assistente autônomo de viagens baseado no
-								padrão ReAct (Reason + Act). O sistema interpreta pedidos em linguagem natural, toma
-								decisões em tempo real e executa planos de viagem completos com streaming do processo de
-								pensamento e das ferramentas acionadas em tempo real.</p>
-							<div class="project-tags">
-								<span class="tag">IA Generativa</span>
-								<span class="tag">LLM</span>
-								<span class="tag">ReAct</span>
-								<span class="tag">Agente Autônomo</span>
-								<span class="tag">Python</span>
-							</div>
-							<ul class="actions">
-								<li><a href="https://github.com/ramoneirao/ReAct-Travel-Agent" class="button"
-										target="_blank">Saiba Mais</a></li>
-							</ul>
-						</article>
-						<article data-topics="Machine Learning, MLOps, XGBoost, Random Forest, MLflow, Python">
-							<a href="https://github.com/ramoneirao/fraud-detection" class="image" target="_blank"><img
-									src="images/fraudDetec.png" alt="Detecção de Fraudes em Cartão de Crédito" /></a>
-							<h3>Detecção de Fraudes em Cartão de Crédito</h3>
-							<p>O <strong>Credit Card Fraud Detection</strong> é um projeto de Machine Learning
-								End-to-End
-								desenvolvido para identificar transações fraudulentas sob cenários de desbalanceamento
-								extremo de classes. O projeto tem pipeline modularizado, pré-processamento cíclico de
-								variáveis temporais e escalonamento robusto (RobustScaler), treinamento e comparação de
-								modelos (Logistic Regression, Random Forest e XGBoost) com ajuste de pesos de classe,
-								rastreamento de experimentos com MLflow e DagsHub, foco na otimização da métrica PR-AUC
-								e gerenciamento de dependências com uv.</p>
-							<div class="project-tags">
-								<span class="tag">Machine Learning</span>
-								<span class="tag">MLOps</span>
-								<span class="tag">XGBoost</span>
-								<span class="tag">Random Forest</span>
-								<span class="tag">MLflow</span>
-								<span class="tag">Python</span>
-							</div>
-							<ul class="actions">
-								<li><a href="https://github.com/ramoneirao/fraud-detection" class="button"
-										target="_blank">Saiba Mais</a></li>
-							</ul>
-						</article>
-						<article data-topics="IA Generativa, LLM, CrewAI, FastAPI, Python">
-							<a href="https://github.com/ramoneirao/guIA-viagens" class="image" target="_blank"><img
-									src="images/travelPlanner.png" alt="Planejador de Viagens" /></a>
-							<h3>Planejador de Viagens com IA (guIA-viagens)</h3>
-							<p>Aplicação baseada em IA Generativa e modelos de linguagem (LLMs) para geração automática
-								de roteiros de viagem personalizados. Desenvolvimento de API em Python com FastAPI para
-								geração automatizada dos roteiros; implementação de arquitetura multiagente com CrewAI.
-								Integração de modelos de linguagem via Groq e uso da API Tavily para busca de
-								informações na web.</p>
-							<div class="project-tags">
-								<span class="tag">IA Generativa</span>
-								<span class="tag">LLM</span>
-								<span class="tag">CrewAI</span>
-								<span class="tag">FastAPI</span>
-								<span class="tag">Python</span>
-							</div>
-							<ul class="actions">
-								<li><a href="https://github.com/ramoneirao/guIA-viagens" class="button"
-										target="_blank">Saiba Mais</a></li>
-							</ul>
-						</article>
-						<!-- 
-						<article data-topics="Machine Learning, MLOps, MLflow, DVC, Python">
-							<a href="https://github.com/ramoneirao/diabetes-mlops" class="image" target="_blank"><img
-									src="images/pic02.png" alt="MLOps Diabetes" /></a>
-							<h3>Pipeline MLOps para Predição de Diabetes</h3>
-							<p>Projeto end-to-end de Machine Learning para predição de risco de diabetes focado na
-								aplicação de boas práticas de MLOps. Desenvolvimento do ciclo de vida completo do
-								modelo, abrangendo análise exploratória de dados (EDA), engenharia de features,
-								treinamento, rastreamento de experimentos com MLflow e versionamento de dados e código
-								utilizando DVC e Git, garantindo a reprodutibilidade e a escalabilidade da solução
-								analítica.</p>
-							<ul class="actions">
-								<li><a href="https://github.com/ramoneirao/diabetes-mlops" class="button"
-										target="_blank">Saiba Mais</a></li>
-							</ul>
-						</article>
-						<article data-topics="NLP, BERT, LLM, Flask, Python">
-							<a href="https://emotion-mining.vercel.app/" class="image" target="_blank"><img
-									src="images/pic03.png" alt="Emotion Mining" /></a>
-							<h3>Plataforma de Mineração de Emoções</h3>
-							<p>Aplicação web interativa para análise e classificação de emoções em textos. Backend
-								desenvolvido com Flask (API) para integrar e avaliar duas abordagens avançadas de
-								Processamento de Linguagem Natural (NLP): um modelo de redes neurais treinado com a
-								arquitetura BERT e um classificador baseado em Modelos de Linguagem de Grande Escala
-								(LLMs), permitindo a comparação de resultados em tempo real.</p>
-							<ul class="actions">
-								<li><a href="https://emotion-mining.vercel.app/" class="button" target="_blank">Saiba
-										Mais</a></li>
-							</ul>
-						</article>
-						-->
+
+						<!-- EmoClassifier -->
 						<article data-topics="Machine Learning, Deep Learning, NLP, BERT, Web Scraping, Python">
-							<a href="https://github.com/ramoneirao/EmoClassifier" class="image" target="_blank"><img
-									src="images/sentiment.png" alt="EmoClassifier" /></a>
-							<h3>Sentiment Analysis</h3>
-							<p>Aplicação de Processamento de Linguagem Natural (NLP) desenvolvida para identificar e
-								classificar emoções em textos exclusivamente em português. O projeto envolveu web
-								scraping de dados da rede social X (antigo Twitter), desenvolvimento de pipeline de
-								pré-processamento de texto (limpeza, normalização e tokenização) e o treinamento de um
-								modelo de classificação baseado na arquitetura <strong>BERT</strong> utilizando Python e
-								bibliotecas de ciência de dados.</p>
+							<a href="https://github.com/ramoneirao/EmoClassifier" class="image" target="_blank"
+								rel="noopener noreferrer">
+								<img src="images/sentiment.png" alt="Projeto de classificação de emoções em português"
+									loading="lazy" decoding="async" />
+							</a>
+
+							<p class="project-eyebrow">NLP · Deep Learning</p>
+							<h3>Classificação de Emoções em Português</h3>
+
+							<p class="project-summary">
+								Pipeline de NLP para identificar emoções em textos em português, envolvendo coleta de
+								dados, pré-processamento, tokenização e treinamento de um modelo baseado em BERT.
+							</p>
+
+							<div class="project-result">
+								<strong>Conexão acadêmica:</strong> o tema também integra minha trajetória de pesquisa
+								e publicação em mineração de emoções.
+							</div>
+
 							<div class="project-tags">
-								<span class="tag">Machine Learning</span>
-								<span class="tag">Deep Learning</span>
-								<span class="tag">NLP</span>
 								<span class="tag">BERT</span>
+								<span class="tag">NLP</span>
 								<span class="tag">Web Scraping</span>
 								<span class="tag">Python</span>
 							</div>
-							<ul class="actions">
-								<li><a href="https://github.com/ramoneirao/EmoClassifier" class="button"
-										target="_blank">Saiba Mais</a></li>
+
+							<ul class="actions project-actions">
+								<li>
+									<a href="https://github.com/ramoneirao/EmoClassifier" class="button"
+										target="_blank" rel="noopener noreferrer">Ver código</a>
+								</li>
+								<li>
+									<a href="https://sol.sbc.org.br/index.php/stil/article/view/31160" class="button"
+										target="_blank" rel="noopener noreferrer">Ver artigo</a>
+								</li>
 							</ul>
+						</article>
+
+						<!-- ReAct -->
+						<article data-topics="IA Generativa, LLM, ReAct, Agente Autônomo, Python">
+							<a href="https://github.com/ramoneirao/ReAct-Travel-Agent" class="image" target="_blank"
+								rel="noopener noreferrer">
+								<img src="images/reAct.png" alt="Assistente autônomo de viagens baseado em ReAct"
+									loading="lazy" decoding="async" />
+							</a>
+
+							<p class="project-eyebrow">IA Generativa · Agentes</p>
+							<h3>Assistente Autônomo de Viagens</h3>
+
+							<p class="project-summary">
+								Assistente baseado no padrão ReAct capaz de interpretar solicitações em linguagem
+								natural, decidir quais ferramentas acionar e executar etapas do planejamento de
+								viagens de forma autônoma.
+							</p>
+
+							<div class="project-result">
+								<strong>Diferencial:</strong> raciocínio orientado a ferramentas e execução de ações
+								em vez de uma resposta estática de LLM.
+							</div>
+
+							<div class="project-tags">
+								<span class="tag">LLM</span>
+								<span class="tag">ReAct</span>
+								<span class="tag">Agentes</span>
+								<span class="tag">Python</span>
+							</div>
+
+							<ul class="actions project-actions">
+								<li>
+									<a href="https://github.com/ramoneirao/ReAct-Travel-Agent" class="button"
+										target="_blank" rel="noopener noreferrer">Ver código</a>
+								</li>
+							</ul>
+						</article>
+
+						<!-- guIA -->
+						<article data-topics="IA Generativa, LLM, CrewAI, FastAPI, Python">
+							<a href="https://github.com/ramoneirao/guIA-viagens" class="image" target="_blank"
+								rel="noopener noreferrer">
+								<img src="images/travelPlanner.png" alt="Planejador de viagens com IA generativa"
+									loading="lazy" decoding="async" />
+							</a>
+
+							<p class="project-eyebrow">IA Generativa · Multiagentes</p>
+							<h3>Planejador de Viagens com IA</h3>
+
+							<p class="project-summary">
+								Aplicação para geração de roteiros de viagem personalizados utilizando arquitetura
+								multiagente com CrewAI, modelos via Groq, busca web com Tavily e API em FastAPI.
+							</p>
+
+							<div class="project-result">
+								<strong>Diferencial:</strong> integração entre múltiplos agentes, busca externa e API
+								para transformar a geração de texto em uma aplicação.
+							</div>
+
+							<div class="project-tags">
+								<span class="tag">CrewAI</span>
+								<span class="tag">FastAPI</span>
+								<span class="tag">Groq</span>
+								<span class="tag">Tavily</span>
+							</div>
+
+							<ul class="actions project-actions">
+								<li>
+									<a href="https://github.com/ramoneirao/guIA-viagens" class="button"
+										target="_blank" rel="noopener noreferrer">Ver código</a>
+								</li>
+							</ul>
+						</article>
+
+					</div>
+				</section>
+
+				<!-- Skills -->
+				<section id="skills">
+					<header class="major">
+						<h2>Habilidades</h2>
+					</header>
+
+					<div class="features compact-skills">
+						<article>
+							<span class="icon solid fa-code"></span>
+							<div class="content">
+								<h3>Linguagens e Dados</h3>
+								<ul>
+									<li>Python, SQL e R</li>
+									<li>Pandas, análise exploratória e Web Scraping</li>
+									<li>PostgreSQL, MySQL, SQLite e MongoDB</li>
+									<li>Matplotlib, Seaborn e Plotly</li>
+									<li>Power BI, Tableau e Looker</li>
+								</ul>
+							</div>
+						</article>
+
+						<article>
+							<span class="icon solid fa-brain"></span>
+							<div class="content">
+								<h3>Machine Learning</h3>
+								<ul>
+									<li>Scikit-learn, XGBoost e LightGBM</li>
+									<li>Classificação, regressão e clusterização</li>
+									<li>Feature engineering e dados desbalanceados</li>
+									<li>Optuna, SHAP e avaliação de modelos</li>
+								</ul>
+							</div>
+						</article>
+
+						<article>
+							<span class="icon solid fa-comment-dots"></span>
+							<div class="content">
+								<h3>NLP e IA</h3>
+								<ul>
+									<li>BERT e classificação de textos</li>
+									<li>Análise de sentimentos e mineração de emoções</li>
+									<li>LLMs, agentes e arquiteturas ReAct</li>
+									<li>CrewAI e aplicações com IA generativa</li>
+								</ul>
+							</div>
+						</article>
+
+						<article>
+							<span class="icon solid fa-laptop-code"></span>
+							<div class="content">
+								<h3>MLOps e Engenharia</h3>
+								<ul>
+									<li>MLflow e DagsHub</li>
+									<li>FastAPI, Flask, Streamlit e APIs Python</li>
+									<li>Git, GitHub, GitLab e Docker</li>
+									<li>AWS e Google Cloud Platform</li>
+								</ul>
+							</div>
 						</article>
 					</div>
 				</section>
 
+				<!-- Experiência -->
+				<section id="experiencia">
+					<header class="major">
+						<h2>Experiência Profissional</h2>
+					</header>
+
+					<div class="experience-item">
+						<h3>Estagiário de Engenharia de Software / Ciência de Dados — SEAP/PA</h3>
+						<p class="experience-meta">Abr 2025 — Atual</p>
+						<ul>
+							<li>Realização de <strong>Análise Exploratória de Dados (EDA)</strong> em bases operacionais
+								com <strong>Python e Pandas</strong>, identificando padrões e apoiando análises
+								internas.</li>
+							<li>Desenvolvimento e automação de relatórios analíticos para suporte à tomada de decisão.
+							</li>
+							<li>Manutenção de módulos de sistemas institucionais utilizando <strong>Laravel e
+									PHP</strong>.</li>
+						</ul>
+					</div>
+
+					<hr />
+
+					<div class="experience-item">
+						<h3>Pesquisador de Iniciação Científica (PIBIC) — UFPA</h3>
+						<p class="experience-meta">Jan 2023 — Mar 2025</p>
+						<ul>
+							<li>Pesquisa aplicada em <strong>NLP</strong>, com foco em mineração de emoções e análise de
+								sentimentos em textos em português.</li>
+							<li>Implementação e benchmark de <strong>XGBoost, LightGBM, CatBoost e BERT</strong>.</li>
+							<li>Produção de dois trabalhos publicados em eventos científicos.</li>
+						</ul>
+					</div>
+
+					<hr />
+
+					<div class="experience-item">
+						<h3>Suporte de TI — Next Tecnologia</h3>
+						<p class="experience-meta">Fev 2022 — Dez 2022</p>
+						<ul>
+							<li>Suporte técnico em hardware e software.</li>
+							<li>Resolução de incidentes e apoio à disponibilidade da infraestrutura tecnológica.</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Publicações -->
+				<section id="publicacoes">
+					<header class="major">
+						<h2>Pesquisa e Publicações</h2>
+					</header>
+
+					<p>
+						Minha experiência acadêmica em NLP resultou em dois trabalhos publicados, conectando pesquisa
+						em língua portuguesa aos projetos que desenvolvo atualmente.
+					</p>
+
+					<div class="publication-grid">
+						<article class="publication-card">
+							<h3>Mineração de Emoções Multirrótulo em Textos Curtos</h3>
+							<p>STIL / Sociedade Brasileira de Computação.</p>
+							<a href="https://sol.sbc.org.br/index.php/stil/article/view/31160"
+								target="_blank" rel="noopener noreferrer" class="button">Ver publicação</a>
+						</article>
+
+						<article class="publication-card">
+							<h3>Análise de Sentimentos em Textos Curtos de Jogos Empáticos</h3>
+							<p>CONTECSI (USP).</p>
+							<a href="https://contecsi.tecsi.org/index.php/contecsi/20CONTECSI/paper/view/7238"
+								target="_blank" rel="noopener noreferrer" class="button">Ver publicação</a>
+						</article>
+					</div>
+				</section>
+
+				<!-- Certificações -->
+				<section id="certificacoes">
+					<header class="major">
+						<h2>Formação e Certificações</h2>
+					</header>
+
+					<p>
+						<strong>Ciência da Computação — UFPA</strong><br />
+						Formação em Ciência de Dados — EBAC
+					</p>
+
+					<ul class="certification-list">
+						<li>
+							AWS Cloud Quest for Cloud Practitioner —
+							<a href="https://www.credly.com/badges/b503af1b-667d-45ac-8348-ee620053177d/linked_in_profile"
+								target="_blank" rel="noopener noreferrer"><strong>AWS</strong></a>
+						</li>
+						<li>
+							Linguagem Python — Do Básico a Aplicações de IA —
+							<a href="https://mycourse.app/EK2ANWJwkXy115GGd"
+								target="_blank" rel="noopener noreferrer"><strong>Data Science Academy</strong></a>
+						</li>
+						<li>
+							Process Data from Dirty to Clean —
+							<a href="https://www.coursera.org/account/accomplishments/verify/BNJAELD88LVU"
+								target="_blank" rel="noopener noreferrer"><strong>Google</strong></a>
+						</li>
+						<li>
+							Linguagem Python Para Data Science e Machine Learning —
+							<a href="https://mycourse.app/aGdpvq8SaRHlAzJDR"
+								target="_blank" rel="noopener noreferrer"><strong>Data Science Academy</strong></a>
+						</li>
+						<li>
+							Processamento de Linguagem Natural com BERT e Python —
+							<a href="https://www.udemy.com/certificate/UC-824a4fea-0dd0-436b-b2e4-a298f95bddcb/"
+								target="_blank" rel="noopener noreferrer"><strong>IA Expert Academy</strong></a>
+						</li>
+						<li>
+							Inteligência Artificial —
+							<a href="https://lms.ebaconline.com.br/certs/validate/33593-40640-87481-91584"
+								target="_blank" rel="noopener noreferrer"><strong>EBAC</strong></a>
+						</li>
+					</ul>
+				</section>
 
 				<!-- Contato -->
 				<section id="contato">
 					<header class="major">
-						<h2>Contatos</h2>
+						<h2>Vamos conversar?</h2>
 					</header>
-					<p>Sinta-se à vontade para entrar em contato</p>
+
+					<p class="contact-intro">
+						Estou aberto a oportunidades em Ciência de Dados, Machine Learning e áreas relacionadas.
+						Se meu perfil fizer sentido para sua equipe ou projeto, entre em contato.
+					</p>
+
+					<ul class="actions contact-actions">
+						<li><a href="mailto:ramonneirao@gmail.com" class="button primary">Enviar e-mail</a></li>
+						<li><a href="https://www.linkedin.com/in/ramoneirao" class="button"
+								target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+					</ul>
+
 					<ul class="contact">
-						<li class="icon solid fa-envelope"><a
-								href="mailto:ramonneirao@gmail.com">ramonneirao@gmail.com</a></li>
-						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/ramoneirao"
-								target="_blank">LinkedIn</a>
+						<li class="icon solid fa-envelope">
+							<a href="mailto:ramonneirao@gmail.com">ramonneirao@gmail.com</a>
 						</li>
-						<li class="icon brands fa-github"><a href="https://github.com/ramoneirao"
-								target="_blank">GitHub</a></li>
+						<li class="icon brands fa-linkedin">
+							<a href="https://www.linkedin.com/in/ramoneirao" target="_blank"
+								rel="noopener noreferrer">LinkedIn</a>
+						</li>
+						<li class="icon brands fa-github">
+							<a href="https://github.com/ramoneirao" target="_blank"
+								rel="noopener noreferrer">GitHub</a>
+						</li>
 					</ul>
 				</section>
 
@@ -397,378 +612,144 @@
 		</div>
 	</div>
 
-	<!-- Dark Mode Script e Estilos -->
+	<!-- Ajustes específicos preservando o dark mode original -->
 	<style>
-		html {
-			scroll-behavior: smooth;
+		html.dark-mode {
+			-webkit-filter: invert(1) hue-rotate(180deg);
+			filter: invert(1) hue-rotate(180deg);
+			background-color: #c9cbd7 !important;
 		}
 
-		/* Barra de Navegação Superior Fixa (Sticky Header) */
-		#header {
-			position: sticky;
-			top: 0;
-			z-index: 1000;
-			background-color: #ffffff !important;
-			padding-top: 1.25em !important;
-			padding-bottom: 1em !important;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			gap: 1em;
-			box-shadow: none !important;
+		html.dark-mode body,
+		html.dark-mode #wrapper,
+		html.dark-mode #main,
+		html.dark-mode #header {
+			background-color: #c9cbd7 !important;
 		}
 
-		#header>* {
-			flex: initial !important;
-		}
-
-		.header-right {
-			display: flex;
-			align-items: center;
-			gap: 1.5em;
-			margin-left: auto;
-		}
-
-		#header .icons {
-			text-align: right;
-			margin: 0;
-			padding: 0;
-		}
-
-		#top-nav {
-			margin: 0;
-		}
-
-		#top-nav ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			gap: 1.25em;
-			align-items: center;
-		}
-
-		#top-nav ul li {
-			margin: 0;
-			padding: 0;
-		}
-
-		#top-nav ul li a {
-			text-decoration: none;
-			font-weight: 600;
-			font-size: 0.9em;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
-			color: #3d4449;
-			transition: color 0.2s ease-in-out;
-			border-bottom: none;
-			position: relative;
-			padding-bottom: 4px;
-		}
-
-		#top-nav ul li a:hover,
-		#top-nav ul li a.active {
-			color: #f56a6a !important;
-		}
-
-		#top-nav ul li a.active::after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 3px;
-			background-color: #f56a6a;
-			border-radius: 2px;
-		}
-
-		@media screen and (max-width: 800px) {
-			#header {
-				padding-top: 1.5em !important;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-			}
-
-			.header-right {
-				margin-left: 0;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 1em;
-			}
-
-			#top-nav ul {
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 0.8em;
-			}
-		}
-
-		/* Filtro de Tópicos */
-		.topic-filter-container {
-			margin-bottom: 2em;
-			padding: 0.5em 0;
-			background: transparent;
-		}
-
-		.topic-chips {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.5em;
-		}
-
-		.topic-chip {
-			background: transparent !important;
-			background-color: transparent !important;
-			color: #7f888f !important;
-			border: 1.5px solid #d0d0d0 !important;
-			border-radius: 1.5em;
-			padding: 0.4em 1.1em;
-			font-size: 0.85em;
-			font-weight: 600;
-			cursor: pointer;
-			transition: all 0.2s ease;
-			box-shadow: none;
-			line-height: 1.2;
-			height: auto;
-		}
-
-		.topic-chip:hover {
-			background-color: #f56a6a !important;
-			color: #ffffff !important;
-			border-color: #f56a6a !important;
-		}
-
-		.topic-chip.active {
-			background-color: #f56a6a !important;
-			color: #ffffff !important;
-			border-color: #f56a6a !important;
-		}
-
-		/* Tags nos Cards dos Projetos */
-		.project-tags {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.4em;
-			margin: 1em 0 1.2em 0;
-		}
-
-		.project-tags .tag {
-			background-color: rgba(245, 106, 106, 0.1);
-			color: #f56a6a;
-			border: 1px solid rgba(245, 106, 106, 0.3);
-			border-radius: 4px;
-			padding: 0.25em 0.6em;
-			font-size: 0.75em;
-			font-weight: 600;
-			cursor: pointer;
-			transition: background-color 0.2s, color 0.2s, transform 0.1s;
-		}
-
-		.project-tags .tag:hover {
-			background-color: #f56a6a;
-			color: #ffffff !important;
-			transform: translateY(-1px);
-		}
-
-		/* Bloqueia o Dark Mode para telas de celular (abaixo de 800px), escondendo o botão */
-		@media screen and (max-width: 799px) {
-			#theme-toggle {
-				display: none !important;
-			}
-		}
-
-		/* Aplica as regras do Modo Escuro exclusivamente em telas maiores que 800px (Desktop/Tablets Grandes) */
-		@media screen and (min-width: 800px) {
-
-			/* Modo Escuro - Injeção Rápida de Filtro CSS */
-			html.dark-mode {
-				-webkit-filter: invert(1) hue-rotate(180deg);
-				filter: invert(1) hue-rotate(180deg);
-				background-color: #c9cbd7 !important;
-			}
-
-			html.dark-mode body,
-			html.dark-mode #wrapper,
-			html.dark-mode #main,
-			html.dark-mode #header {
-				background-color: #c9cbd7 !important;
-				/* Mapeia aproximadamente para #282a36 (Dracula Background) após o filtro */
-			}
-
-			html.dark-mode #sidebar,
-			html.dark-mode #sidebar>.inner {
-				background-color: #a5a8bb !important;
-				/* Mapeia aproximadamente para #44475a (Dracula) após o filtro */
-			}
-
-			/* Melhora o contraste de leitura para baixa visão (textos e títulos mais claros) */
-			html.dark-mode p,
-			html.dark-mode li,
-			html.dark-mode span:not(.label),
-			html.dark-mode dt,
-			html.dark-mode dd,
-			html.dark-mode td,
-			html.dark-mode th {
-				color: #111111 !important;
-				/* Invertido pelo filtro invert(1), transforma-se em off-white claro (#eeeeee) */
-			}
-
-			html.dark-mode h1,
-			html.dark-mode h2,
-			html.dark-mode h3,
-			html.dark-mode h4,
-			html.dark-mode h5,
-			html.dark-mode h6,
-			html.dark-mode strong {
-				color: #000000 !important;
-				/* Invertido pelo filtro invert(1), transforma-se em branco puro (#ffffff) */
-			}
-
-			/* Precisamos re-inverter os elementos de imagem e video pra eles não ficarem negativos */
-			html.dark-mode img,
-			html.dark-mode video,
-			html.dark-mode iframe {
-				-webkit-filter: invert(1) hue-rotate(180deg) !important;
-				filter: invert(1) hue-rotate(180deg) !important;
-				transform: translateZ(0);
-				/* Bugfix Safari iOS Mobile */
-			}
+		html.dark-mode img,
+		html.dark-mode video,
+		html.dark-mode iframe {
+			-webkit-filter: invert(1) hue-rotate(180deg) !important;
+			filter: invert(1) hue-rotate(180deg) !important;
+			transform: translateZ(0);
 		}
 	</style>
+
 	<script>
-		const themeToggleBtn = document.getElementById('theme-toggle');
-		if (themeToggleBtn) {
-			themeToggleBtn.addEventListener('click', function (e) {
-				e.preventDefault();
-				document.documentElement.classList.toggle('dark-mode');
+		(function () {
+			const themeToggleBtn = document.getElementById('theme-toggle');
+			const menuToggle = document.getElementById('mobile-menu-toggle');
+			const topNav = document.getElementById('top-nav');
 
-				if (document.documentElement.classList.contains('dark-mode')) {
-					this.classList.remove('fa-moon');
-					this.classList.add('fa-sun');
-					localStorage.setItem('theme', 'dark');
-				} else {
-					this.classList.remove('fa-sun');
-					this.classList.add('fa-moon');
-					localStorage.setItem('theme', 'light');
-				}
-			});
-		}
-
-		// Caso já esteja salvo no cache do navegador (LocalStorage)
-		if (localStorage.getItem('theme') === 'dark') {
-			document.documentElement.classList.add('dark-mode');
 			if (themeToggleBtn) {
-				themeToggleBtn.classList.remove('fa-moon');
-				themeToggleBtn.classList.add('fa-sun');
-			}
-		}
+				themeToggleBtn.addEventListener('click', function (e) {
+					e.preventDefault();
+					document.documentElement.classList.toggle('dark-mode');
 
-		// Script do Filtro de Projetos por Tópico
-		document.addEventListener('DOMContentLoaded', function () {
-			const topicChips = document.querySelectorAll('.topic-chip');
-			const projectArticles = document.querySelectorAll('.posts article');
-			const noProjectsMsg = document.getElementById('no-projects-message');
-			let currentTopic = 'all';
-
-			function filterProjects() {
-				let visibleCount = 0;
-
-				projectArticles.forEach(article => {
-					const topics = (article.getAttribute('data-topics') || '').toLowerCase();
-					const matchesTopic = (currentTopic === 'all') || topics.includes(currentTopic.toLowerCase());
-
-					if (matchesTopic) {
-						article.style.display = '';
-						visibleCount++;
-					} else {
-						article.style.display = 'none';
-					}
+					const isDark = document.documentElement.classList.contains('dark-mode');
+					this.classList.toggle('fa-moon', !isDark);
+					this.classList.toggle('fa-sun', isDark);
+					localStorage.setItem('theme', isDark ? 'dark' : 'light');
 				});
 
-				if (noProjectsMsg) {
-					noProjectsMsg.style.display = (visibleCount === 0) ? 'block' : 'none';
+				if (localStorage.getItem('theme') === 'dark') {
+					document.documentElement.classList.add('dark-mode');
+					themeToggleBtn.classList.remove('fa-moon');
+					themeToggleBtn.classList.add('fa-sun');
 				}
 			}
 
-			topicChips.forEach(chip => {
-				chip.addEventListener('click', function () {
-					topicChips.forEach(c => c.classList.remove('active'));
-					this.classList.add('active');
-					currentTopic = this.getAttribute('data-topic');
-					filterProjects();
+			if (menuToggle && topNav) {
+				menuToggle.addEventListener('click', function () {
+					const open = topNav.classList.toggle('open');
+					this.setAttribute('aria-expanded', String(open));
+					this.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+					this.classList.toggle('fa-bars', !open);
+					this.classList.toggle('fa-times', open);
 				});
-			});
 
-			document.querySelectorAll('.project-tags .tag').forEach(tag => {
-				tag.addEventListener('click', function () {
-					const tagText = this.textContent.trim();
-					topicChips.forEach(chip => {
-						if (chip.getAttribute('data-topic').toLowerCase() === tagText.toLowerCase()) {
-							chip.click();
+				topNav.querySelectorAll('a').forEach(function (link) {
+					link.addEventListener('click', function () {
+						topNav.classList.remove('open');
+						menuToggle.setAttribute('aria-expanded', 'false');
+						menuToggle.setAttribute('aria-label', 'Abrir menu');
+						menuToggle.classList.add('fa-bars');
+						menuToggle.classList.remove('fa-times');
+					});
+				});
+			}
+
+			document.addEventListener('DOMContentLoaded', function () {
+				const topicChips = document.querySelectorAll('.topic-chip');
+				const projectArticles = document.querySelectorAll('.posts article[data-topics]');
+				const noProjectsMsg = document.getElementById('no-projects-message');
+
+				topicChips.forEach(function (chip) {
+					chip.addEventListener('click', function () {
+						const currentTopic = this.getAttribute('data-topic').toLowerCase();
+						let visibleCount = 0;
+
+						topicChips.forEach(function (item) {
+							item.classList.remove('active');
+							item.setAttribute('aria-pressed', 'false');
+						});
+
+						this.classList.add('active');
+						this.setAttribute('aria-pressed', 'true');
+
+						projectArticles.forEach(function (article) {
+							const topics = (article.getAttribute('data-topics') || '').toLowerCase();
+							const matches = currentTopic === 'all' || topics.includes(currentTopic);
+
+							article.style.display = matches ? '' : 'none';
+							if (matches) visibleCount++;
+						});
+
+						if (noProjectsMsg) {
+							noProjectsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
 						}
 					});
 				});
-			});
 
-			// Script de ScrollSpy e Rolagem Suave Personalizada
-			const header = document.getElementById('header');
-			const navLinks = document.querySelectorAll('#top-nav ul li a');
-			const sections = Array.from(document.querySelectorAll('section[id]'));
+				const header = document.getElementById('header');
+				const navLinks = document.querySelectorAll('#top-nav a');
+				const sections = Array.from(document.querySelectorAll('section[id]'));
 
-			// Rolagem precisa ao clicar no menu do header
-			navLinks.forEach(link => {
-				link.addEventListener('click', function (e) {
-					const href = this.getAttribute('href');
-					if (href && href.startsWith('#')) {
-						e.preventDefault();
-						const targetId = href.substring(1);
-						const targetSection = document.getElementById(targetId);
-						if (targetSection) {
-							const headerHeight = header ? header.offsetHeight : 65;
-							const targetY = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 15;
-							window.scrollTo({
-								top: targetY,
-								behavior: 'smooth'
-							});
+				function updateScrollSpy() {
+					const headerHeight = header ? header.offsetHeight : 70;
+					const position = window.scrollY + headerHeight + 45;
+					let current = 'banner';
+
+					sections.forEach(function (section) {
+						if (position >= section.offsetTop) {
+							current = section.id;
 						}
+					});
+
+					if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 80) {
+						current = 'contato';
 					}
-				});
-			});
 
-			function updateScrollSpy() {
-				const headerHeight = header ? header.offsetHeight : 65;
-				const scrollPosition = window.scrollY + headerHeight + 35;
-				let currentSectionId = 'banner';
+					navLinks.forEach(function (link) {
+						const isActive = link.getAttribute('href') === '#' + current;
+						link.classList.toggle('active', isActive);
 
-				sections.forEach(section => {
-					const sectionTop = section.offsetTop;
-					if (scrollPosition >= sectionTop) {
-						currentSectionId = section.getAttribute('id');
-					}
-				});
-
-				// Se estiver no finalzinho da página, força destacar o menu Contatos
-				if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 60) {
-					currentSectionId = 'contato';
+						if (isActive) {
+							link.setAttribute('aria-current', 'location');
+						} else {
+							link.removeAttribute('aria-current');
+						}
+					});
 				}
 
-				navLinks.forEach(link => {
-					link.classList.remove('active');
-					if (link.getAttribute('href') === '#' + currentSectionId) {
-						link.classList.add('active');
-					}
-				});
-			}
-
-			window.addEventListener('scroll', updateScrollSpy);
-			updateScrollSpy();
-		});
+				window.addEventListener('scroll', updateScrollSpy, { passive: true });
+				updateScrollSpy();
+			});
+		})();
 	</script>
 
-	<!-- Scripts -->
+	<!-- Scripts originais do template -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
